@@ -1,0 +1,1705 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #757575;
+    font-family: helveticaneuelight;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #757575;
+}
+
+a image {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    outline: none;
+    border: none;
+    /*font-family: robotolight;*/
+    padding: 0;
+    color: #757575;
+}
+
+.clear {
+    clear: both;
+}
+
+.mainTitle {
+    font-size: 24px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.subTitle {
+    font-size: 17px;
+}
+
+.desc {
+    font-size: 20px;
+}
+
+.basic {
+    font-size: 15px;
+}
+
+.normal {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+#mainWrapper {
+    height: 100%;
+}
+
+/*........... drop Down ............ */
+#mainWrapper .dropDown {
+
+}
+
+#mainWrapper .dropDown .head {
+    font-size: 0;
+    cursor: pointer;
+}
+
+#mainWrapper .dropDown .head .headTitle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mainWrapper .dropDown .head .sign {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mainWrapper .dropDown .list {
+    display: none;
+}
+
+#mainWrapper .dropDown .list.expand {
+    display: block;
+}
+
+/*........... Section Size ............*/
+
+.section {
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*.......... header ................*/
+#mainWrapper .header {
+    width: 100%;
+    /*background: #49b9ec;*/
+    font-size: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;;
+}
+
+#mainWrapper .header .mainLogo {
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #49B9EC;
+}
+#mainWrapper .header .mainLogo a{
+    display: block;
+}
+
+#mainWrapper .header .mainLogo .logo {
+    margin-left: 10%;
+    width: 50%;
+    display: block;
+    height: auto;
+}
+
+#mainWrapper .header .mainLogo .text {
+    margin-left: 10%;
+}
+
+#mainWrapper .header .headerCenter {
+    width: 67%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+#mainWrapper .header .headerCenter .searchMain {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline-block;
+    font-size: 0;
+    margin-right: 2%;
+    padding: 4px 0 4px 1%;
+    vertical-align: middle;
+    width: 68%;
+    border: 1px solid #cccccc;;
+}
+
+#mainWrapper .header .headerCenter .searchMain .searchBar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 93%;
+}
+
+#mainWrapper .header .headerCenter .searchMain .searchSign {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 2%;
+    vertical-align: middle;
+    width: 2.5%;
+}
+
+
+#mainWrapper .header .headerCenter .headerFilter {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28%;
+    border: 1px solid #cccccc;
+    position: relative;
+}
+
+#mainWrapper .header .headerCenter .headerFilter .head {
+    /*background: #2a9ed3;*/
+    padding: 10px 5%;
+}
+
+#mainWrapper .header .headerCenter .headerFilter .head .headTitle {
+    color: #48b6e8;
+    /*font-family: robotolight;*/
+    margin-right: 5%;
+    width: 90%;
+}
+
+#mainWrapper .header .headerCenter .headerFilter .head .sign {
+    width: 5%;
+}
+#mainWrapper .header .headerCenter .headerFilter .list{
+    position: absolute;
+    background: #ffffff;
+    width: 90%;
+    padding: 0px 5% 10px 5%;
+    margin-top: 2px;
+    z-index: 500;
+    box-shadow: -1px 1px 3px 0 #BCBCBC, 1px 1px 3px -1px #BCBCBC;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    left: -1px;
+}
+#mainWrapper .header .headerCenter .headerFilter .list li{
+    padding: 10px 0;
+}
+#mainWrapper .header .headerCenter .headerFilter .list li a{
+    color: #757575;
+}
+#mainWrapper .header .headerCenter .headerFilter .list li .icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 8%;
+}
+#mainWrapper .header .headerCenter .headerFilter .list li .icon img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#mainWrapper .header .headerCenter .headerFilter .list li .text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 87%;
+    /*margin-left: 5%;*/
+}
+
+
+#mainWrapper .header .headerRight {
+    width: 18%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    /*font-size: 0;*/
+}
+
+#mainWrapper .header .headerRight .clientLogo {
+    display: inline-block;
+    margin-right: 7%;
+    vertical-align: middle;
+    width: 55px;
+}
+
+#mainWrapper .header .headerRight .clientLogo .logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*#mainWrapper .header .headerRight .iconsMain {*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*width: 23%;*/
+    /*display: none;*/
+/*}*/
+
+/*#mainWrapper .header .headerRight .iconsMain .icon {*/
+    /*cursor: pointer;*/
+    /*display: inline-block;*/
+    /*margin-right: 40px;*/
+    /*vertical-align: middle;*/
+    /*width: 30px;*/
+/*}*/
+
+/*#mainWrapper .header .headerRight .iconsMain .icon img {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*display: block;*/
+/*}*/
+/*#mainWrapper .header .headerRight {*/
+/*display: inline-block;*/
+/*height: auto;*/
+/*width: 18%;*/
+/*margin-right: 8%;*/
+/*}*/
+
+/*............... Content Wrapper ................*/
+.contentWrapper {
+    overflow: hidden;
+    /*height: 100%;*/
+}
+
+.contentWrapper .section {
+    /*display: table;*/
+    position: relative;
+    /*height: 100%;*/
+    /*overflow: hidden;*/
+}
+
+/*.............................................. Left content ................... */
+.contentWrapper .leftContent {
+    /*float: left;*/
+    background: #EDEDED;
+    width: 15%;
+    /*display: table-cell;*/
+    position: absolute;
+    left: 0;
+    height: 100%;
+    box-shadow: -5px 0 3px -2px #cfcfcf inset;
+    vertical-align: top;
+}
+
+.contentWrapper .leftContent .menu {
+    /*background: #EDEDED;*/
+    height: 100%;
+}
+
+.contentWrapper .leftContent .menu li {
+    font-size: 0;
+    /*padding: 0px 7%;*/
+}
+.contentWrapper .leftContent .menu li.active {
+    background: #ffffff;
+}
+
+.contentWrapper .leftContent .menu li a {
+    display: block;
+    padding: 12px 6%;
+    color: #757575;
+    border-bottom: 1px solid #D8D8D8;
+}
+.contentWrapper .leftContent .menu li #jstree a {
+    display: inline-block;
+    border-bottom: none;
+    padding: 0;
+}
+.contentWrapper .leftContent .menu li #jstree li {
+
+}
+.contentWrapper .leftContent .menu li.active a {
+    color: #49b9ec;
+}
+
+.contentWrapper .leftContent .menu li:last-of-type a {
+    border-bottom: none;
+}
+
+.contentWrapper .leftContent .menu li a .icon {
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: middle;
+    width: 23px;
+}
+.contentWrapper .leftContent .menu li a .icon .iconImg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*.contentWrapper .leftContent .menu li.notifications .icon{*/
+    /*background: url("../images/notificationIcon_03.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.notifications.active .icon{*/
+    /*background: url("../images/notificationActiveIcon_03.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.mails .icon{*/
+    /*background: url("../images/emailIcon_03.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.mails.active .icon{*/
+    /*background: url("../images/emailActiveIcon_03.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+
+.contentWrapper .leftContent .menu li a .icon img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.contentWrapper .leftContent .menu li .content {
+    display: inline-block;
+}
+.contentWrapper .leftContent .menu li a .text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 68%;
+}
+.contentWrapper .leftContent .menu li .jstree a .text {
+    width: auto;
+}
+
+.contentWrapper .leftContent .menu li a .notification {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+    text-align: right;
+    font-size: 13px;
+    color: #ffffff;
+}
+.contentWrapper .leftContent .menu li a .close {
+    vertical-align: middle;
+    width: 15%;
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    display: none;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+.contentWrapper .leftContent .menu li a:hover .close {
+    display: inline-block;
+}
+
+.contentWrapper .leftContent .menu li a .notification span {
+    background: #D63E3E;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 4px 0;
+    text-align: center;
+    width: 23px;
+}
+
+.contentWrapper .leftContent .menu li.dropDown {
+
+}
+
+.contentWrapper .leftContent .menu li.dropDown .head {
+    padding: 15px 6%;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.contentWrapper .leftContent .menu li:last-of-type .head {
+    border-bottom: none;
+}
+
+.contentWrapper .leftContent .menu li.dropDown .head.active {
+    background: #ffffff;
+    color: #49b9ec;
+    box-shadow: -5px 0 3px -2px #CFCFCF inset;
+}
+
+.contentWrapper .leftContent .menu li.dropDown .head .icon {
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: middle;
+    width: 23px;
+}
+.contentWrapper .leftContent .menu li.dropDown .head .icon .iconImg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*............. Adding icons for left menus ...............*/
+/*.contentWrapper .leftContent .menu li.dropDown.favorite .head .icon {*/
+    /*background: url("../images/favoriteIcon.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.dropDown.favorite .head.active .icon {*/
+    /*background: url("../images/favoriteActiveIcon.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.dropDown.library .head .icon {*/
+    /*background: url("../images/libraryIcon.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.dropDown.library .head.active .icon {*/
+    /*background: url("../images/libraryActiveIcon.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.dropDown.history .head .icon {*/
+    /*background: url("../images/historyIcon.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.contentWrapper .leftContent .menu li.dropDown.history .head.active .icon {*/
+    /*background: url("../images/historyActiveIcon.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+
+.contentWrapper .leftContent .menu li.dropDown .head .headTitle {
+    width: 70%;
+}
+
+.contentWrapper .leftContent .menu li.dropDown .head .sign {
+    width: 15px;
+    margin-left: 4%;
+}
+
+.contentWrapper .leftContent .menu li .list {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.contentWrapper .leftContent .menu li .list li {
+
+}
+
+.contentWrapper .leftContent .menu li .list li a {
+    border-bottom: none;
+    padding: 12px 8%;
+}
+
+/*....... Content Menu ........... */
+.contentWrapper .leftContent .menu li .jstree {
+    padding: 5px 6%;
+}
+
+.contentWrapper .leftContent .menu li .tree li {
+    cursor: pointer;
+    margin-left: 20px;
+    /*padding: 8px 0;*/
+}
+
+.contentWrapper .leftContent .menu li .tree li .content {
+    padding: 8px 10px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+.contentWrapper .leftContent .menu li .tree li.current > div.content {
+    background: #FFFFFF;
+    color: #49b9ec;
+    border-bottom: 1px dotted #eaeaea;
+}
+.contentWrapper .leftContent .menu li .tree li .icon {
+    width: 12px;
+    height: 12px;
+    background: url("../images/close.png") no-repeat left;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contentWrapper .leftContent .menu li .tree li.current.show > div.content > span.icon {
+    background: url("../images/open.png") no-repeat left;
+    background-size: contain;
+    margin-right: 5px;
+}
+.contentWrapper .leftContent .menu li .tree li .mark {
+    display: inline-block;
+    vertical-align: middle;
+    /*border: 1px dotted #49b9ec;*/
+    width: 20px;
+    height: 18px;
+    background: url("../images/folder_07.png") no-repeat;
+    background-size: contain;
+}
+.contentWrapper .leftContent .menu li .tree li.current > div.content > span.mark{
+    background: url("../images/folderSelected_03.png") no-repeat;
+    background-size: contain;
+}
+.contentWrapper .leftContent .menu li .tree li .single {
+    display: inline-block;
+    vertical-align: middle;
+    /*border: 1px dotted #49b9ec;*/
+    width: 20px;
+    height: 20px;
+    background: url("../images/docSmall_03.png") no-repeat;
+    background-size: contain;
+}
+.contentWrapper .leftContent .menu li .tree li.current > div.content > span.single {
+    background: url("../images/smallDocSelected_03.png") no-repeat;
+    background-size: contain;
+}
+
+.contentWrapper .leftContent .menu li .tree li .text {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.contentWrapper .leftContent .menu li .tree li ul {
+    display: none;
+}
+
+/*......................................... middle content .................................*/
+.contentWrapper .middleContent {
+    background: #FFFFFF;
+    position: relative;
+    width: 67%;
+    left: 15%;
+    vertical-align: top;
+    /*-webkit-transition: all 400ms ease-in;*/
+    /*-moz-transition: all 400ms ease-in;*/
+    /*-ms-transition: all 400ms ease-in;*/
+    /*-o-transition: all 400ms ease-in;*/
+    /*transition: all 200ms ease-in;*/
+}
+.contentWrapper .middleContent .content{
+    position: relative;
+}
+
+/*.contentWrapper .middleContent .contentTitle{*/
+/*border-bottom: 1px solid #D8D8D8;*/
+/*margin: 1.5% 4% 0;*/
+/*padding-bottom: 2%;*/
+/*color: #49b9ec;*/
+/*color: #49b9ec;*/
+/*font-size: 0;*/
+/*}*/
+.contentWrapper .middleContent .contentTitle .titleText {
+    display: inline-block;
+    vertical-align: middle;
+    width: 95%;
+}
+
+.contentWrapper .middleContent .contentTitle .slideBtn {
+    /*display: inline-block;*/
+    vertical-align: middle;
+    width: 2.5%;
+    padding-left: 2.5%;
+    cursor: pointer;
+    display: none;
+}
+
+.contentWrapper .middleContent .contentTitle .slideBtn .slideArrow {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*........... Bread Crumb ................. */
+.contentWrapper .middleContent .subHeader {
+    margin: 0 2%;
+    font-size: 0;
+    padding-top: 10px;
+}
+
+/*........... Bread crumb .......... */
+.contentWrapper .middleContent .subHeader .breadCrumb {
+    color: #49b9ec;
+    display: inline-block;
+    vertical-align: middle;
+    /*padding-top: 2%;*/
+    width: 85%;
+    margin-right: 5%;
+}
+
+.contentWrapper .middleContent .subHeader .breadCrumb div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contentWrapper .middleContent .subHeader .breadCrumb div.linkText {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.contentWrapper .middleContent .subHeader .breadCrumb div.linkText .icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+}
+.contentWrapper .middleContent .subHeader .breadCrumb div.linkText .text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contentWrapper .middleContent .subHeader .breadCrumb div:last-of-type.linkText {
+    color: #757575;
+}
+
+.contentWrapper .middleContent .subHeader .breadCrumb div.linkArrow {
+    width: 11px;
+    margin-right: 10px;
+    /*color: #cdcdcd;*/
+}
+
+.contentWrapper .middleContent .subHeader .breadCrumb div.linkArrow img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*.......... profile filter ......... */
+.contentWrapper .middleContent .subHeader .profileFilter {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #CCCCCC;
+    width: 20%;
+}
+.contentWrapper .middleContent .subHeader .profileFilter .head{
+    padding: 7px 5%;
+}
+.contentWrapper .middleContent .subHeader .profileFilter .head .headTitle{
+    width: 90%;
+    margin-right: 4%;
+}
+.contentWrapper .middleContent .subHeader .profileFilter .head .sign{
+    width: 6%;
+    height: auto;
+}
+
+/*........ folder Numbers .......... */
+.contentWrapper .middleContent .subHeader .folderNumber {
+    width: 10%;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contentWrapper .middleContent .subHeader .folderNumber .icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 10px;
+}
+.contentWrapper .middleContent .subHeader .folderNumber .number{
+    display: inline-block;
+    vertical-align: middle;
+    /*font-weight: bold;*/
+}
+
+/*................ contents for middleContent ...........*/
+
+.contentWrapper .middleContent .contentSections {
+    position: relative;
+    margin: 0px 2%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+.contentWrapper .middleContent .contentSections li {
+    background: none repeat scroll 0 0 #FF0000;
+    float: left;
+    /*margin: 0 0 2% 2%;*/
+    margin: 0 5px 5px 0;
+    width: 17.6%;
+
+    height: 250px;
+    /*max-width: 172px;*/
+
+    /*margin: 3% 0 0 3%;*/
+    /*padding: 4% 2%;*/
+    /*width: 25.4%;*/
+}
+.contentWrapper .middleContent .contentSections li a{
+    padding: 30px;
+    display: block;
+}
+
+.contentWrapper .middleContent .contentSections li.one {
+    width: 31%;
+    /*height: 300px;*/
+}
+.contentWrapper .middleContent .contentSections li.two {
+    width: 24%;
+    /*height: 200px;*/
+}
+.contentWrapper .middleContent .contentSections li.three {
+    width: 25.5%;
+    /*height: 180px;*/
+}
+/*.contentWrapper .middleContent .contentSections li.four {*/
+    /*width: 20%;*/
+    /*height: 240px;*/
+/*}*/
+.contentWrapper .middleContent .contentSections li.five {
+    width: 25.5%;
+    /*height: 200px;*/
+}
+.contentWrapper .middleContent .contentSections li.six {
+    width: 44%;
+    /*height: 170px;*/
+}
+.contentWrapper .middleContent .contentSections li.seven {
+    width: 29%;
+    /*height: 200px;*/
+}
+.contentWrapper .middleContent .contentSections li.eight {
+    width: 34%;
+    /*height: 220px;*/
+}
+.contentWrapper .middleContent .contentSections li.nine {
+    width: 35.5%;
+    /*height: 300px;*/
+}
+.contentWrapper .middleContent .contentSections li.ten {
+    width: 29%;
+    /*height: 300px;*/
+}
+.contentWrapper .middleContent .contentSections li a {
+    display: block;
+}
+
+.contentWrapper .middleContent .contentSections li.openAccount {
+    background: #86cd57;
+    /*width: 28%;*/
+}
+
+.contentWrapper .middleContent .contentSections li.openAccount .type {
+    color: #2b5d0b;
+}
+
+.contentWrapper .middleContent .contentSections li.closeAccount {
+    background: #74cbd5;
+    /*width: 14%;*/
+}
+
+.contentWrapper .middleContent .contentSections li.closeAccount .type {
+    color: #0d6b76;
+}
+
+.contentWrapper .middleContent .contentSections li.accountDoc {
+    background: #ba8ccb;
+
+    /*width: 14%;*/
+}
+
+.contentWrapper .middleContent .contentSections li.accountDoc .type {
+    color: #61137e;
+}
+
+.contentWrapper .middleContent .contentSections li .contentSign {
+    /*width: 22%;*/
+    width: 50px;
+}
+
+.contentWrapper .middleContent .contentSections li .contentSign img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.contentWrapper .middleContent .contentSections li .type {
+    margin-top: 40px;
+}
+
+.contentWrapper .middleContent .contentSections li .description {
+    color: #FFFFFF;
+    line-height: 29px;
+    margin-top: 5px;
+}
+
+/*.............................................. right Content .................................*/
+
+.contentWrapper .rightContent {
+    /*display: table-cell;*/
+    height: 100%;
+    top: 0;
+    width: 18%;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+}
+
+.contentWrapper .rightContent .tagTitle {
+    margin-top: 15px;
+}
+.contentWrapper .rightContent .tagTitle .text{
+   display: inline-block;
+    vertical-align: middle;
+}
+.contentWrapper .rightContent .tagTitle .selectAll{
+   display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.contentWrapper .rightContent .tagTitle .selectAll .checkBox{
+   display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #CCCCCC ;
+    margin-right: 3px;
+    padding: 2px;
+}
+.contentWrapper .rightContent .tagTitle .selectAll .checkBox.checked{
+    background: url("../images/check.jpg") no-repeat center;
+}
+
+.contentWrapper .rightContent .tagTitle .selectAll .label{
+   display: inline-block;
+    vertical-align: middle;
+}
+
+.contentWrapper .rightContent .tagsMain {
+    margin-top: 20px;
+}
+
+.contentWrapper .rightContent .tagsMain .tag {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-radius: 9px;
+    color: #49B9EC;
+    cursor: pointer;
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 8px 18px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.contentWrapper .rightContent .tagsMain .tag.disable {
+    color: #FFFFFF;
+    background: #9b9b9b;
+}
+
+
+/*............ Related Content .................*/
+.contentWrapper .rightContent .relatedContent {
+    margin-top: 8%;
+}
+
+.contentWrapper .rightContent .relatedContent .contentList {
+    margin-top: 10px;
+    background: #EDEDED;
+}
+
+.contentWrapper .rightContent .relatedContent .contentList li {
+    font-size: 0;
+    padding: 10px 5%;
+    cursor: pointer;
+}
+.contentWrapper .rightContent .relatedContent .contentList li a{
+    padding: 10px 5%;
+    font-size: 0;
+    display: block;
+}
+
+.contentWrapper .rightContent .relatedContent .contentList li .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12%;
+}
+.contentWrapper .rightContent .relatedContent .contentList li .icon img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contentWrapper .rightContent .relatedContent .contentList li .text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 85%;
+    margin-left: 3%;
+    color: #757575;
+}
+
+/*............ inner Page Content ............... */
+.contentWrapper .innerPageContent{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    background: #ffffff;
+    height: 100%;
+    /*display: none;*/
+}
+.contentWrapper .innerPageContent .backExpand{
+    padding: 1% 2%;
+}
+.contentWrapper .innerPageContent .backExpand .back{
+    float: left;
+    cursor: pointer;
+}
+.contentWrapper .innerPageContent .backExpand .minAndMax{
+    float: right;
+    width: 25px;
+    cursor: pointer;
+}
+.contentWrapper .innerPageContent .backExpand .minAndMax .icon{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+/*.contentWrapper .innerPageContent .backClose .close{*/
+    /*float: right;*/
+    /*cursor: pointer;*/
+    /*padding-left: 2%;*/
+/*}*/
+.contentWrapper .innerPageContent .contentArea{
+    /*margin: 0 2%;*/
+    overflow-x: auto;
+}
+.contentWrapper .innerPageContent .contentArea .relatedContSlider{
+    width: 800px;
+}
+/*.contentWrapper .innerPageContent .contentArea .headTitle{*/
+    /*margin: 0 2% 20px 2%;*/
+/*}*/
+.contentWrapper .innerPageContent .contentArea .contentImg{
+    position: relative;
+    margin: 0 2%;
+    width: 100%;
+}
+.contentWrapper .innerPageContent .contentArea .contentImg .contentTitle{
+    margin-bottom: 20px;
+}
+.contentWrapper .innerPageContent .contentArea .contentImg .container{
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.contentWrapper .innerPageContent .contentArea .contentImg .container .flowImg{
+   width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contentImg .tag{
+    position: absolute;
+}
+.contentImg .tag .circle{
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #b1b1b1 inset;
+    border: 2px solid #49B9EC;
+}
+.contentImg .tag .content{
+    position: absolute;
+    width: 180px;
+    z-index: 100;
+    display: none;
+}
+.contentImg .tag:hover .content{
+    display: block;
+}
+.contentImg .tag .content .arrow{
+    background: none repeat scroll 0 0 #FF0000;
+    height: 12px;
+    position: absolute;
+    width: 20px;
+}
+
+.contentImg .tag.bottom .content{
+    left: -75px;
+    padding-top: 15px;
+}
+.contentImg .tag.bottom .content .arrow{
+    left: 50%;
+    top: 0;
+    margin-left: -10px;
+    margin-top: 2px;
+    background: url("../images/bottom.png") no-repeat;
+
+}
+.contentImg .tag.top .content{
+    bottom: 27px;
+    left: -75px;
+    padding-bottom: 15px;
+}
+.contentImg .tag.top .content .arrow{
+    background: url("../images/up.png") no-repeat ;
+    bottom: 4px;
+    left: 50%;
+    margin-left: -10px;
+}
+.contentImg .tag.left .content{
+    bottom: auto;
+    left: -194px;
+    margin-left: 0;
+    padding-right: 15px;
+    top: -60px;
+}
+.contentImg .tag.left .content .arrow{
+    top: 50%;
+    right: 4px;
+    width: 12px;
+    height: 20px;
+    margin-left: 0;
+    background: url("../images/left.png") no-repeat;
+}
+.contentImg .tag.right .content{
+    bottom: auto;
+    left: 28px;
+    margin-left: 0;
+    padding-left: 15px;
+    top: -62px;
+}
+.contentImg .tag.right .content .arrow{
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 20px;
+    margin-left: 4px;
+    background: url("../images/right.png") no-repeat;
+}
+
+
+.contentImg .tag .content .text{
+    background: #ffffff;
+    padding: 10px 15px;
+    height: 110px;
+    margin-top: -2px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #d0d0d0;
+    border: 1px solid #cdcdcd;
+}
+.contentImg .tag .content .text li{
+    padding: 7px 0;
+}
+.contentImg .tag .content .text li a{
+    display: block;
+}
+.contentImg .tag .content .text li .icon{
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contentImg .tag .content .text li .icon img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.contentImg .tag .content .text li .iconTitle{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+.contentImg .tag.one{
+    left: 8%;
+    top: 17%;
+}
+.contentImg .tag.two{
+    left: 36%;
+    top: 17%;
+}
+.contentImg .tag.three{
+    left: 63%;
+    top: 17%;
+}
+.contentImg .tag.four{
+    left: 90%;
+    top: 17%;
+}
+.contentImg .tag.five{
+    left: 36%;
+    top: 55%;
+}
+.contentImg .tag.six{
+    left: 90%;
+    top: 55%;
+}
+.contentImg .tag.seven{
+    left: 8%;
+    top: 91%;
+}
+
+/*....................... AccountClosing .............*/
+
+.contentImg .accClosing .tag.one{
+    left: 11%;
+    top: 17%;
+}
+.contentImg .accClosing .tag.two{
+    left: 36%;
+    top: 17%;
+}
+.contentImg .accClosing .tag.three{
+    left: 63%;
+    top: 17%;
+}
+.contentImg .accClosing .tag.four{
+    left: 90%;
+    top: 17%;
+}
+.contentImg .accClosing .tag.five{
+    left: 11%;
+    top: 51%;
+}
+.contentImg .accClosing .tag.six{
+    left: 36%;
+    top: 51%;
+}
+.contentImg .accClosing .tag.seven{
+    left: 61%;
+    top: 51%;
+}
+
+/*....................... CreditCard details .............*/
+
+.contentImg .ccDetails .tag.one{
+    left: 52%;
+    top: 3%;
+}
+.contentImg .ccDetails .tag.two{
+    left: 22%;
+    top: 32%;
+}
+.contentImg .ccDetails .tag.three{
+    left: 81%;
+    top: 34%;
+}
+.contentImg .ccDetails .tag.four{
+    left: 25%;
+    top: 88%;
+}
+.contentImg .ccDetails .tag.five{
+    left: 78%;
+    top: 91%;
+}
+.contentImg .ccDetails .tag.six{
+    left: 36%;
+    top: 51%;
+}
+.contentImg .ccDetails .tag.seven{
+    left: 61%;
+    top: 51%;
+}
+
+
+.contentWrapper .innerPageContent .controls{
+    display: table;
+    width: 100%;
+    /*margin-top: 20px;*/
+}
+.contentWrapper .innerPageContent .controls .history{
+    display: table-cell;
+    width: 20%;
+    vertical-align: top;
+    border-right: 1px solid #afafaf;
+}
+.contentWrapper .innerPageContent .controls .history .historyTitle{
+    background: none repeat scroll 0 0 #D3D3D3;
+    padding: 20px;
+}
+.contentWrapper .innerPageContent .controls .history .historyList{
+
+}
+.contentWrapper .innerPageContent .controls .history .historyList li{
+
+}
+.contentWrapper .innerPageContent .controls .history .historyList li a{
+    color: #000000;
+    display: block;
+    padding: 5px 20px;
+}
+.contentWrapper .innerPageContent .controls .history .historyList li a.current{
+    background: #3995c6;
+    color: #ffffff;
+}
+
+.contentWrapper .innerPageContent .controls .tabsSection{
+    display: table-cell;
+    width: 80%;
+    vertical-align: top;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea{
+    background:  #D3D3D3;
+    padding-top: 16px;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .tabsMain{
+    float: left;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .tabsMain li{
+    float: left;
+    position: relative;
+    margin-right: 10px;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .tabsMain li a{
+    color: #000000;
+    background: #afafaf;
+    padding: 12px 25px;
+    display: block;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .tabsMain li .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    color: #000000;
+    display: none;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .tabsMain li:hover .close{
+    display: block;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .tabsMain li a.current{
+    background: #ffffff;
+}
+
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .setPrimary{
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .setPrimary .icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabsArea .setPrimary .text{
+    display: inline-block;
+    vertical-align: middle;
+    color: #2788dc;
+}
+
+
+.contentWrapper .innerPageContent .controls .tabsSection .tabContentMain{
+   margin: 2% 3%;
+    margin-bottom: 100px;
+}
+.contentWrapper .innerPageContent .controls .tabsSection .tabContentMain img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+.contentWrapper .innerPageContent .historyMain{
+    /*margin: 0 2%;*/
+    position: relative;
+    padding-bottom: 100px;
+}
+.contentWrapper .innerPageContent .historyMain .historyTitle{
+   padding: 0 2% 20px 2%;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 10px;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain{
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .arrow{
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .arrow .arrowImg{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .slider{
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .slider .sliderContent{
+    position: relative;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .slide{
+    float: left;
+    width: 25%;
+    position: relative;
+
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .slide .content{
+    border: 1px solid #CCCCCC;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .slide .content .close{
+    background: none repeat scroll 0 0 #9d9d9d;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 2px 7px;
+    position: absolute;
+    right: -4px;
+    top: -5px;
+    cursor: pointer;
+    display: none;
+}
+.contentWrapper .innerPageContent .historyMain .historySliderMain .slide:hover .content .close{
+    display: block;
+}
+
+
+
+
+
+
+
+
+/*......................... section content page ........................*/
+/*.contentWrapper .contentMain {*/
+/*margin: 20px 2% 0 2%;*/
+/*}*/
+
+/*.contentWrapper .contentMain .contentTitle {*/
+/*color: #49B9EC;*/
+/*margin-bottom: 10px;*/
+/*}*/
+
+/*.contentWrapper .contentMain .contentDesc {*/
+/*margin-bottom: 10px;*/
+/*}*/
+/*.contentWrapper .contentMain .addToFav {*/
+/*width: 4%;*/
+/*float: right;*/
+/*}*/
+/*.contentWrapper .contentMain .addToFav img{*/
+/*width: 100%;*/
+/*height: auto;*/
+/*display: block;*/
+/*}*/
+
+/*.contentWrapper .contentMain .contentImg {*/
+
+/*}*/
+/*.contentWrapper .contentMain .contentImg img{*/
+/*width: 100%;*/
+/*height: auto;*/
+/*display: block;*/
+/*}*/
+
+/*.contentWrapper .contentMain .extraCont {*/
+/*margin-top: 20px;*/
+/*}*/
+
+/*.contentWrapper .contentMain .extraCont .head {*/
+/*background: #b8b8b8;*/
+/*color: #ffffff;*/
+/*padding: 5px 10px;*/
+/*margin: 0;*/
+/*}*/
+
+/*.contentWrapper .contentMain .extraCont .head .titleText {*/
+/*float: left;*/
+/*}*/
+/*.contentWrapper .contentMain .extraCont .head .primary {*/
+/*float: right;*/
+/*margin-right: 5%;*/
+/*}*/
+
+/*.contentWrapper .contentMain .extraCont .head .control {*/
+/*float: right;*/
+/*cursor: pointer;*/
+/*}*/
+
+/*.contentWrapper .contentMain .extraCont .content {*/
+/*width: 100%;*/
+/*height: 300px;*/
+/*background: #e8e8e8;*/
+/*display: none;*/
+/*}*/
+
+/*.contentWrapper .contentMain .extraCont .content iframe {*/
+/*width: 100%;*/
+/*height: 300px;*/
+/*}*/
+
+/*........... comment section ...................*/
+
+/*.contentWrapper .middleContent .commentsMain {*/
+/*margin-top: 40px;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .writeComment {*/
+
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .writeComment .commentArea {*/
+/*background: #EDEDED;*/
+/*border: medium none;*/
+/*display: block;*/
+/*font-family: robotoregular;*/
+/*height: 100px;*/
+/*padding: 3%;*/
+/*resize: none;*/
+/*margin: 0;*/
+/*width: 94%;*/
+/*color: #757575;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .writeComment .commentButton {*/
+/*width: 100%;*/
+/*padding: 12px 0;*/
+/*text-align: center;*/
+/*background: #96C1EA;*/
+/*color: #FFFFFF;*/
+/*cursor: pointer;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .commentSection {*/
+
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .commentSection .comment {*/
+/*font-size: 0;*/
+/*padding: 20px 0;*/
+/*border-bottom: 1px solid #757575;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .commentSection > div:last-of-type {*/
+/*border-bottom: none;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .commentSection .comment .userImage {*/
+/*display: inline-block;*/
+/*vertical-align: top;*/
+/*width: 5%;*/
+/*height: auto;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .commentSection .comment .commentContent {*/
+/*display: inline-block;*/
+/*margin-left: 20px;*/
+/*vertical-align: top;*/
+/*width: 87%;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .comment .commentContent .userName {*/
+/*margin-bottom: 5px;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .comment .commentContent .userText {*/
+/*font-family: robotolight;*/
+/*margin-bottom: 20px;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .comment .commentContent .reply {*/
+/*color: #96C1EA;*/
+/*font-family: robotolight;*/
+/*}*/
+
+/*.contentWrapper .middleContent .commentsMain .comment .commentContent .reply span {*/
+/*display: inline-block;*/
+/*cursor: pointer;*/
+/*}*/
+
+
+/*....................... login Content ................. */
+#mainWrapper .loginSection{
+    background: url("../images/background.jpg") no-repeat center;
+    background-size: 100% 100%;
+
+    height: 95%;
+    position: relative;
+}
+#mainWrapper .loginMain{
+    width: 800px;
+    margin: 0px auto;
+    padding: 60px 40px;
+    background: rgba(252,252,252,0.95);
+    position: absolute;
+    height: 230px;
+    left: 50%;
+    margin-left: -440px;
+    top: 50px;
+}
+#mainWrapper .loginMain .compDesc{
+    float: left;
+    /*height: 320px;*/
+    width: 60%;
+}
+#mainWrapper .loginMain .compDesc .descTitle{
+    margin-bottom: 15px;
+    color: #45aede;
+}
+#mainWrapper .loginMain .compDesc .text{
+    line-height: 22px;
+    color: #000000;
+}
+#mainWrapper .loginMain .details{
+    width: 35%;
+    margin-left: 5%;
+    float: left;
+}
+#mainWrapper .loginMain .details .title{
+    margin-bottom: 15px;
+    color: #49B9EC;
+}
+#mainWrapper .loginMain .details .fieldTitle{
+    margin-bottom: 7px;
+}
+#mainWrapper .loginMain .details input{
+    border: 1px solid #CCCCCC;
+    display: block;
+    width: 96%;
+    padding: 8px 2%;
+    font-family: helveticaneuelight;
+    margin-bottom: 20px;
+}
+#mainWrapper .loginMain .details .signIn{
+    background: #49B9EC;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 8px;
+    cursor: pointer;
+}
+
+
+/*......................... Notification Page ..........................................*/
+
+#mainWrapper .notificationWrapper{
+    left: 15%;
+    position: relative;
+    width: 85%;
+}
+#mainWrapper .notificationWrapper .tabsMain{
+    background: #D3D3D3;
+    padding-top: 20px;
+}
+#mainWrapper .notificationWrapper .tabsMain li{
+    background: #AFAFAF;
+    color: #000000;
+    float: left;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+#mainWrapper .notificationWrapper .tabsMain li.active{
+    background: #FFFFFF;
+}
+#mainWrapper .notificationWrapper .tabsMain li .newNotifications{
+    background: #D63E3E;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 4px 0;
+    position: absolute;
+    right: -6px;
+    text-align: center;
+    top: -10px;
+    width: 23px;
+}
+
+/*........ tab content ............ */
+#mainWrapper .notificationWrapper .tabContentMain{
+   margin: 3px 0;
+    /*background: #D3D3D3;*/
+    padding-bottom: 100px;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent{
+
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabList{
+    float: left;
+    width: 60%;
+    height: 700px;
+    /*overflow: scroll;*/
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabList .list{
+
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabList .list li{
+    border-bottom: 1px solid #d1d1d1;
+    padding: 15px 20px;
+    background: #E5E5E5;
+    color: #000000;
+}
+
+
+
+
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions{
+    float: left;
+    width: 36%;
+    margin: 30px 2%;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .listContent{
+    line-height: 22px;
+    margin-bottom: 50px;
+    color: #000000;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .options{
+
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .options .btn{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: red;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .options .btn.important{
+    background: #48B6E8;
+    border-bottom: 3px solid #3b95bd;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .options .btn.important:hover{
+    background: #43a9d7;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .options .btn.delete{
+    background: #EE3A43;
+    border-bottom: 3px solid #ba2c34;
+}
+#mainWrapper .notificationWrapper .tabContentMain .tabContent .tabOptions .options .btn.delete:hover{
+    background: #d3333b;
+}

@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-18">
+    <title>Gieom</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/jsTree.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.js"></script>
+    <!--<script type="text/javascript" src="js/carousel.js"></script>-->
+    <script type="text/javascript" src="js/jstree.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+
+        $(function () {
+            // 6 create an instance when the DOM is ready
+            $('#jstree').jstree();
+            // 7 bind to events triggered on the tree
+            $('#jstree').on("changed.jstree", function (e, data) {
+                console.log(data.selected);
+            });
+            // 8 interact with the tree - either way is OK
+            $('button').on('click', function () {
+                $('#jstree').jstree(true).select_node('child_node_1');
+                $('#jstree').jstree('select_node', 'child_node_1');
+                $.jstree.reference('#jstree').select_node('child_node_1');
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<!--.................... mainWrapper .................. -->
+<div id="mainWrapper">
+
+<!--............ header .............. -->
+<div class="header">
+    <div class="section">
+        <div class="mainLogo title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+            </a>
+            <!--<div class="text">-->
+            <!--GIEOM-->
+            <!--</div>-->
+        </div>
+        <div class="headerCenter">
+            <div class="searchMain">
+                <input type="text" placeholder="Search" class="searchBar small">
+                <img src="images/searchSign.png" class="searchSign">
+            </div>
+
+            <div class="headerFilter dropDown">
+                <div class="head"  data-init="0">
+                    <div class="headTitle small">
+                        Welcome Gary
+                    </div>
+                    <img src="images/dropDownSign.png" class="sign">
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="#">
+                            <!--<div class="icon">-->
+                            <!--<img src="images/emails_03.png">-->
+                            <!--</div>-->
+                            <div class="text small">
+                                PROFILE
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!--<div class="icon">-->
+                            <!--<img src="images/notifications_03.png">-->
+                            <!--</div>-->
+                            <div class="text small">
+                                SETTINGS
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <!--<div class="icon">-->
+                            <!--<img src="images/emails_03.png">-->
+                            <!--</div>-->
+                            <div class="text small">
+                                SIGN OUT
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="headerRight">
+            <!--<div class="iconsMain">-->
+            <!--<div class="message icon">-->
+            <!--<img src="images/messageIcon.png">-->
+            <!--</div>-->
+            <!--<div class="notification icon">-->
+            <!--<img src="images/notification_warning.png">-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="clientLogo">
+                <img src="images/clientLogo_03.png" class="logo">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!--............ content Wrapper ................. -->
+<div class="contentWrapper">
+<div class="section">
+<div class="leftContent">
+<ul class="menu">
+
+<li class="notifications">
+    <a href="notifications.html">
+        <div class="icon">
+            <img src="images/inactive/notificationIcon_03.png" class="iconImg">
+        </div>
+        <div class="text small">
+            NOTIFICATIONS
+        </div>
+        <div class="notification">
+            <span>
+                3
+            </span>
+        </div>
+    </a>
+</li>
+
+<li class="mails">
+    <a href="notifications.html">
+        <div class="icon">
+            <img src="images/inactive/emailIcon_03.png" class="iconImg">
+        </div>
+        <div class="text small">
+            MAILS
+        </div>
+        <div class="notification">
+            <span>
+                1
+            </span>
+        </div>
+    </a>
+</li>
+<!--.......... favorite menu ............ -->
+<li class="dropDown favorite">
+    <div class="head active" data-init="1">
+        <div class="icon">
+            <img src="images/active/favoriteIcon.png" class="iconImg">
+        </div>
+        <div class="headTitle small">
+            FAVORITE
+        </div>
+        <img src="images/dropDownSign.png" class="sign">
+    </div>
+    <ul class="list expand">
+        <li>
+            <a href="#">
+                <div class="text small">
+                    FAVORITE 1
+                </div>
+                <div class="close">
+                    X
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    FAVORITE 2
+                </div>
+                <div class="close">
+                    X
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    FAVORITE 3
+                </div>
+                <div class="close">
+                    X
+                </div>
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+<!--.......... Content menu ............ -->
+<li class="dropDown library">
+<div class="head active" data-init="1">
+    <div class="icon">
+        <img src="images/active/libraryIcon.png" class="iconImg">
+    </div>
+    <div class="headTitle small">
+        LIBRARY
+    </div>
+    <img src="images/dropDownSign.png" class="sign">
+</div>
+<div id="jstree" class="list expand">
+<ul class="tree">
+<li data-init="0">
+    <div class="content">
+        <div class="text small">
+            ICICI INDIA
+        </div>
+    </div>
+    <ul>
+        <li data-init="0" id="child_node_1">
+            <div class="content">
+                <div class="text small">
+                    NORTH
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0" class="current">
+            <div class="content">
+                <div class="text small">
+                    EAST
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    WEST
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    SOUTH
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            BANGALORE
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            CHENNAI
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            HYDRABAD
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li data-init="0">
+    <div class="content">
+        <div class="text small">
+            ICICI SRILANKA
+        </div>
+    </div>
+    <ul>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 1
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 2
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <!--<span class="single"></span>-->
+
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 3
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 4
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</ul>
+</div>
+</li>
+
+<!--.......... History menu ............ -->
+<li class="dropDown history">
+    <div class="head active" data-init="1">
+        <div class="icon">
+            <img src="images/active/historyIcon.png" class="iconImg">
+        </div>
+        <div class="headTitle small">
+            HISTORY
+        </div>
+        <img src="images/dropDownSign.png" class="sign">
+    </div>
+    <ul class="list expand">
+        <li>
+            <a href="#">
+                <div class="text small">
+                    HISTORY 1
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    HISTORY 2
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    HISTORY 3
+                </div>
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+</div>
+
+<!--............ center Content ................ -->
+<div class="middleContent">
+<div class="content">
+<!--..................... inner page content .............. -->
+
+<div class="innerPageContent">
+<div class="backExpand">
+    <div class="back title">
+        <a href="index.html">
+            Back
+        </a>
+    </div>
+    <div class="minAndMax" data-init="0">
+        <img src="images/maximizeActiveIcon.png" class="icon">
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="contentArea">
+<!--<div class="headTitle mainTitle">-->
+    <!--Account Opening Flow-->
+<!--</div>-->
+<div class="relatedContSlider cycle-slideshow"
+        data-cycle-slides=".contentImg"
+        data-cycle-timeout="0"
+        data-cycle-pager=".rightContent .relatedContent .contentList"
+        data-cycle-pager-template=""
+        data-cycle-auto-height="container"
+        data-cycle-speed="600">
+
+    <div class="contentImg">
+        <div class="contentTitle mainTitle">
+            Account Opening Flow
+        </div>
+
+        <div class="container accOpening">
+        <img src="images/flowImage_02.jpg" class="flowImg">
+
+
+        <div class="tag one right">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag two bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag three bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag four left">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag five bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag six left">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tag seven top">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="contentImg">
+        <div class="contentTitle mainTitle">
+            Account Closing Flow
+        </div>
+
+        <div class="container accClosing">
+        <img src="images/accClosingFlow.jpg" class="flowImg">
+
+
+        <div class="tag one right">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag two bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag three bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag four left">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag five right">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag six left">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tag seven top">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="contentImg">
+        <div class="contentTitle mainTitle">
+            Credit Card Details
+        </div>
+
+        <div class="container ccDetails">
+        <img src="images/creditCard-FLOW.jpg" class="flowImg">
+
+
+        <div class="tag one bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag two bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag three bottom">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag four top">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="tag five top">
+            <div class="circle"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <ul class="text basic">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Video
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                Audio
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/docImage.png" class="iconImg">
+                            </div>
+                            <div class="iconTitle">
+                                E-Book
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="historyMain">
+    <div class="historyTitle title">
+        History
+    </div>
+    <div class="historySliderMain">
+        <div class="arrow left">
+            <img src="images/leftArrow.png" class="arrowImg">
+        </div>
+        <div class="slider normal">
+           <div class="sliderContent">
+               <div class="slide">
+                   <div class="content">
+                       History 1
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 2
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 3
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 4
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 5
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 6
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 7
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 8
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="slide">
+                   <div class="content">
+                       History 9
+                       <div class="close">
+                           x
+                       </div>
+                   </div>
+               </div>
+               <div class="clear"></div>
+           </div>
+        </div>
+
+        <div class="arrow right">
+            <img src="images/rightArrow.png" class="arrowImg">
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<!--.................... right content ........................ -->
+<div class="rightContent">
+    <div class="tagTitle subTitle">
+        <div class="text">
+            TAGS
+        </div>
+        <div class="selectAll basic">
+            <div class="checkBox">
+
+            </div>
+            <div class="label">
+                SELECT ALL
+            </div>
+        </div>
+    </div>
+    <div class="tagsMain">
+        <div class="tag small" data-init="0">
+            TELLER
+        </div>
+        <div class="tag small" data-init="0">
+            ACCOUNT
+        </div>
+        <div class="tag small" data-init="0">
+            CLERK
+        </div>
+        <div class="tag small" data-init="0">
+            CASHIER
+        </div>
+        <div class="tag small" data-init="0">
+            PROCESS
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!--............ Assets ...............-->
+    <div class="relatedContent">
+        <div class="relatedContentTitle subTitle">
+            RELATED CONTENT
+        </div>
+        <ul class="contentList">
+            <li>
+                <!--<a href="#">-->
+                    <div class="icon">
+                        <img src="images/imageSign_03.png">
+                    </div>
+                    <div class="text basic">
+                        Account Opening Flow
+                    </div>
+                <!--</a>-->
+            </li>
+            <li>
+                <!--<a href="#">-->
+                    <div class="icon">
+                        <img src="images/imageSign_03.png">
+                    </div>
+                    <div class="text basic">
+                        Account Closing Flow
+                    </div>
+                <!--</a>-->
+            </li>
+            <li>
+                <!--<a href="#">-->
+                    <div class="icon">
+                        <img src="images/imageSign_03.png">
+                    </div>
+                    <div class="text basic">
+                        Credit Card Details
+                    </div>
+                <!--</a>-->
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>

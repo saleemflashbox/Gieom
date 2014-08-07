@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-18">
+    <title>Gieom-Notifications</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/jsTree.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+<!--.................... mainWrapper .................. -->
+<div id="mainWrapper">
+
+<!--............ header .............. -->
+<div class="header">
+    <div class="section">
+        <div class="mainLogo title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+            </a>
+            <!--<div class="text">-->
+            <!--GIEOM-->
+            <!--</div>-->
+        </div>
+        <div class="headerCenter">
+            <div class="searchMain">
+                <input type="text" placeholder="Search" class="searchBar small">
+                <img src="images/searchSign.png" class="searchSign">
+            </div>
+
+            <div class="headerFilter dropDown">
+                <div class="head"  data-init="0">
+                    <div class="headTitle small">
+                        Welcome Gary
+                    </div>
+                    <img src="images/dropDownSign.png" class="sign">
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="#">
+                            <!--<div class="icon">-->
+                            <!--<img src="images/emails_03.png">-->
+                            <!--</div>-->
+                            <div class="text small">
+                                PROFILE
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!--<div class="icon">-->
+                            <!--<img src="images/notifications_03.png">-->
+                            <!--</div>-->
+                            <div class="text small">
+                                SETTINGS
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <!--<div class="icon">-->
+                            <!--<img src="images/emails_03.png">-->
+                            <!--</div>-->
+                            <div class="text small">
+                                SIGN OUT
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="headerRight">
+            <!--<div class="iconsMain">-->
+            <!--<div class="message icon">-->
+            <!--<img src="images/messageIcon.png">-->
+            <!--</div>-->
+            <!--<div class="notification icon">-->
+            <!--<img src="images/notification_warning.png">-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="clientLogo">
+                <img src="images/clientLogo_03.png" class="logo">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!--............ content Wrapper ................. -->
+<div class="contentWrapper">
+<div class="section">
+<div class="leftContent">
+<ul class="menu">
+
+<li class="notifications">
+    <a href="notifications.html">
+        <div class="icon">
+            <img src="images/inactive/notificationIcon_03.png" class="iconImg">
+        </div>
+        <div class="text small">
+            NOTIFICATIONS
+        </div>
+        <div class="notification">
+            <span>
+                3
+            </span>
+        </div>
+    </a>
+</li>
+
+<li class="mails">
+    <a href="notifications.html">
+        <div class="icon">
+            <img src="images/inactive/emailIcon_03.png" class="iconImg">
+        </div>
+        <div class="text small">
+            MAILS
+        </div>
+        <div class="notification">
+            <span>
+                1
+            </span>
+        </div>
+    </a>
+</li>
+<!--.......... favorite menu ............ -->
+<li class="dropDown favorite">
+    <div class="head active" data-init="1">
+        <div class="icon">
+            <img src="images/active/favoriteIcon.png" class="iconImg">
+        </div>
+        <div class="headTitle small">
+            FAVORITE
+        </div>
+        <img src="images/dropDownSign.png" class="sign">
+    </div>
+    <ul class="list expand">
+        <li>
+            <a href="#">
+                <div class="text small">
+                    FAVORITE 1
+                </div>
+                <div class="close">
+                    X
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    FAVORITE 2
+                </div>
+                <div class="close">
+                    X
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    FAVORITE 3
+                </div>
+                <div class="close">
+                    X
+                </div>
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+<!--.......... Content menu ............ -->
+<li class="dropDown library">
+<div class="head active" data-init="1">
+    <div class="icon">
+        <img src="images/active/libraryIcon.png" class="iconImg">
+    </div>
+    <div class="headTitle small">
+        LIBRARY
+    </div>
+    <img src="images/dropDownSign.png" class="sign">
+</div>
+<div id="jstree" class="list expand">
+<ul class="tree">
+<li data-init="0">
+    <div class="content">
+        <div class="text small">
+            ICICI INDIA
+        </div>
+    </div>
+    <ul>
+        <li data-init="0" id="child_node_1">
+            <div class="content">
+                <div class="text small">
+                    NORTH
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0" class="current">
+            <div class="content">
+                <div class="text small">
+                    EAST
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    WEST
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    SOUTH
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            BANGALORE
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            CHENNAI
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            HYDRABAD
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li data-init="0">
+    <div class="content">
+        <div class="text small">
+            ICICI SRILANKA
+        </div>
+    </div>
+    <ul>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 1
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 2
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <!--<span class="single"></span>-->
+
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 3
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data-init="0">
+            <div class="content">
+                <div class="text small">
+                    DUMMY 4
+                </div>
+            </div>
+            <ul>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+                <li data-init="0">
+                    <div class="content">
+                        <div class="text small">
+                            main One
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</ul>
+</div>
+</li>
+
+<!--.......... History menu ............ -->
+<li class="dropDown history">
+    <div class="head active" data-init="1">
+        <div class="icon">
+            <img src="images/active/historyIcon.png" class="iconImg">
+        </div>
+        <div class="headTitle small">
+            HISTORY
+        </div>
+        <img src="images/dropDownSign.png" class="sign">
+    </div>
+    <ul class="list expand">
+        <li>
+            <a href="#">
+                <div class="text small">
+                    HISTORY 1
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    HISTORY 2
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="text small">
+                    HISTORY 3
+                </div>
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+</div>
+
+<!--............ Notification Content ................ -->
+<div class="notificationWrapper">
+    <!--......... Tabs ............. -->
+    <ul class="tabsMain subTitle">
+        <li id="notifications" class="active">
+            Notifications
+            <div class="newNotifications">
+                3
+            </div>
+        </li>
+        <li id="mails">
+            Mails
+            <div class="newNotifications">
+                1
+            </div>
+        </li>
+        <li>
+            Notifications 1
+        </li>
+        <li>
+            Notifications 2
+            <div class="newNotifications">
+                5
+            </div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+
+    <!--.............. tab Content ........... -->
+    <ul class="tabContentMain normal">
+        <li class="tabContent notifications">
+            <div class="tabList notificationList">
+                <ul class="list">
+                    <li>
+                        Admission Notification - UT/NE Sponsored Candidates
+                    </li>
+                    <li>
+                        M.Sc. Biotechnology
+                    </li>
+                    <li>
+                        Notification for Spot Admissions
+                    </li>
+                    <li>
+                        Admission Notification - Ph.D. Sanskrit Studies
+                    </li>
+                    <li>
+                        Admission Notification - PG Dip. Sanskrit Comp. Linguistics
+                    </li>
+                    <li>
+                        Admission Notification - UT/NE sponsored Candidates
+                    </li>
+                    <li>
+                        Called for Interview: Ph.D. Sanskrit Studies
+                    </li>
+                    <li>
+                        Called for Interview: PG Dip. Sanskrit Comp. Linguistics
+                    </li>
+                    <li>
+                        PG Courses: II Waiting Lists
+                    </li>
+                    <li>
+                        Provisionally Selected - M.Tech. Bioinformatics
+                    </li>
+                    <li>
+                        Master of Public Health (MPH) sponsored category
+                    </li>
+                    <li>
+                        Instructions for M.Tech/M.Phil/Ph.D. Admissions
+                    </li>
+                </ul>
+            </div>
+            <div class="tabOptions notificationOptions">
+                <div class="listContent normal">
+                    The above candidates should report in person (Proxy will not be permitted) to the Deputy
+                    Registrar (Acad & Exams), O/o the Controller of Examinations, University of Hyderabad
+                    Campus, Gachibowli,Hyderabad 500 046 on or before 31-07-2014 between 10.00 a.m. and
+                    1.00 p.m. If the selected candidates fail to complete the admission on the given date and
+                    time, the provisional selection will automatically stands cancelled.
+                </div>
+                <div class="options">
+                    <div class="important btn subTitle">
+                        MARK AS IMPORTANT
+                    </div>
+                    <div class="delete btn subTitle">
+                        DELETE
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </li>
+    </ul>
+
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/jstree.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+
+    $(function () {
+        // 6 create an instance when the DOM is ready
+        $('#jstree').jstree();
+        // 7 bind to events triggered on the tree
+        $('#jstree').on("changed.jstree", function (e, data) {
+            console.log(data.selected);
+        });
+        // 8 interact with the tree - either way is OK
+        $('button').on('click', function () {
+            $('#jstree').jstree(true).select_node('child_node_1');
+            $('#jstree').jstree('select_node', 'child_node_1');
+            $.jstree.reference('#jstree').select_node('child_node_1');
+        });
+    });
+
+</script>
+
+</body>
+</html>

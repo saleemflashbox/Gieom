@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-18">
+    <title>Gieom-Login</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/jsTree.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jstree.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+
+        $(function () {
+            // 6 create an instance when the DOM is ready
+            $('#jstree').jstree();
+            // 7 bind to events triggered on the tree
+            $('#jstree').on("changed.jstree", function (e, data) {
+                console.log(data.selected);
+            });
+            // 8 interact with the tree - either way is OK
+            $('button').on('click', function () {
+                $('#jstree').jstree(true).select_node('child_node_1');
+                $('#jstree').jstree('select_node', 'child_node_1');
+                $.jstree.reference('#jstree').select_node('child_node_1');
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<!--.................... mainWrapper .................. -->
+<div id="mainWrapper">
+
+<!--............ header .............. -->
+<div class="header">
+    <div class="section">
+        <div class="mainLogo title">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--............ Login content ................. -->
+<div class="loginSection">
+    <div class="loginMain">
+        <div class="compDesc subTitle">
+            <div class="descTitle title">
+                GIEOM
+            </div>
+            <div class="text">
+                We came together to address a common passion - to make the
+                life at work for everybody interesting and uncomplicated.
+                We have been working relentlessly trying to achieve this vision.
+                We have been able to do this because we bring unique skills
+                and points of view on everything we make. GIEOM is a product
+                of immense perseverance and rich collective experience
+                of the following people.
+            </div>
+        </div>
+        <div class="details">
+            <div class="title">
+                Login
+            </div>
+            <div class="fieldTitle small">
+                User Name
+            </div>
+            <input type="text" name="UName" class="normal">
+            <div class="fieldTitle small">
+                Password
+            </div>
+            <input type="password" name="UPassword" class="normal">
+
+            <div class="signIn subTitle">
+                Sign in
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
